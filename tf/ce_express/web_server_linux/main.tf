@@ -22,3 +22,9 @@ module "web_server" {
 data "template_file" "webserver_launch_configuration_user_data" {
   template = file("${path.module}/template/user_data.tpl")
 }
+
+provider “aws” {
+ region = “us-west-2”
+ shared_credentials_file = “/Users/tf_user/.aws/creds”
+ profile = “customprofile”
+}
