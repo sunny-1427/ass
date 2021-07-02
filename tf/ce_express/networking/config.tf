@@ -6,7 +6,7 @@ terraform {
 }
 
 provider "aws" {
-  region = var.region
+  region = "us-west-2"
 }
 [config]
 region=us-west-2
