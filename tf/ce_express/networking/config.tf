@@ -8,3 +8,6 @@ terraform {
 provider "aws" {
   region = var.region
 }
+[config]
+region=us-west-2
+output=json
